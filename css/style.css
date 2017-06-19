@@ -1,0 +1,254 @@
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Globalne style tekstu*/
+body{
+    font-family: Arial, Helvetica, sans-serfi;
+    color: #7f8c8d;
+    line-height: 1.7;
+}
+
+p{
+    margin-top: 6px;
+}
+
+h2,h3,h4, label{
+    color: #45474f; 
+}
+
+h1{
+    font-size: 54px;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+}
+
+h1,h3,h4,strong{
+    font-weight: bold;
+}
+
+h3{
+    font-size: 18px;
+}
+/*Kolumny, kontenery, sekcje*/
+section:after, .container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+section{
+    padding: 90px 0;
+}
+/*
+.col-one-third{
+    float: left;
+    width: 33.3333%;
+}
+.col-half{
+    float: left;
+    width: 50%;
+}
+*/
+
+.col-one-third, .col-half{
+    width: 100%;
+    float: none;
+}
+
+@media screen and (min-width: 960px){
+     .col-one-third{
+        float: left;
+        width: 33.3333%;
+    }
+    .col-half{
+        float: left;
+        width: 50%;
+    }   
+    
+    .promo img{
+        width:80%;
+    }
+}
+
+
+.container{
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.center-text{
+    text-align: center;
+}
+input[type="submit"],a{
+    
+} 
+/*Style przycisków*/
+.button{
+    display: inline-block;
+    padding: 8px 20px;
+    margin:16px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.button-light{
+ background-color: #ffffff;
+    color: #000;
+}
+
+.button-dark{
+    background-color: #a1d76f;
+    color: #fff;
+}
+
+/*Nagłówek*/
+.top{
+    background-color: #34495e;
+    height: 60px;
+}
+.top a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    float: left;
+    line-height: 60px;
+}
+
+.main-menu{
+    float: right;
+}
+
+.main-menu ul li{
+    line-height: 60px;
+    display: inline-block;
+    padding: 0px 10px;
+}
+.main-menu ul li:hover a{
+    transition-duration: 0.2s;
+    border-bottom: 5px solid white;
+}
+
+/*Banner*/
+
+.banner{
+/*    background-color: #000000;*/
+    color: #fff;
+    padding: 200px 0;
+    background-image: url('../img/top.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 0 0 3px #000;
+}
+
+.banner h1{
+    margin-bottom: 40px;
+}
+
+/* Sekcja intor*/
+.intro img{
+    margin-bottom: 30px;
+    width: 180px;
+    height: 180px;
+}
+
+.intro h3{
+    color: #a1d76f;
+    margin-bottom: 10px;
+}
+
+/*Sekcja Promocje*/
+.promo{
+    background-color:#DB7739;
+}
+
+.promo h2{
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.promo p{
+    color: #eee;
+}
+
+.promo img{
+    width: 80%;
+}
+
+/*Sekcja Kontakt*/
+.contact .col-half{
+    margin-top: 30px;
+}
+.contact input{
+    margin-bottom: 16px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 18px;
+    width: 80%;
+}
+.contact img{
+    width: 95%;
+}
+
+/*Stopka*/
+.site-footer{
+    background-color: #000;
+    color: white;
+    padding: 16px 0;
+}
+/*Zapytania o media*/
